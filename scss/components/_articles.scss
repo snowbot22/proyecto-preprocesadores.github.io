@@ -1,0 +1,52 @@
+//ABSTRACTS
+@use "../abstract/variables" as var;
+
+//COMPONENTS
+@use "../components/flex" as flex;
+@use "../components/grid" as grid;
+@use "../components/dimensions" as dim;
+
+//GLOBAL
+@import "../global/normalize";
+
+
+
+.noticias--title{
+    text-align: center;
+    font-size: var.$font-title;
+    font-family: var.$titles;
+    color: map-get($map: var.$colors, $key:dark );
+    margin: 3rem 0 0rem 0;
+}
+
+.art{
+    @include dim.dimensions( $width:100%, $maxWidth: 1200px, $height: max-content);
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 5rem 1rem;
+    gap: 2.3rem;
+    border-bottom: 2px solid blue;
+    margin-bottom: 2rem;
+    &__title{
+        font-size: var.$font-subtitle;
+        font-family: var.$titles;
+        line-height: 3rem;
+    }
+    &__img{
+        height: 220px;
+        max-width: 900px;
+        margin: auto;
+    }
+    &__text{
+        line-height: 3.5rem;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .art__img{
+        height: 400px;
+    }
+}
+    

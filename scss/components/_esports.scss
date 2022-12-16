@@ -1,0 +1,48 @@
+//ABSTRACTS
+@use "../abstract/variables" as var;
+
+//COMPONENTS
+@use "../components/flex" as flex;
+@use "../components/grid" as grid;
+@use "../components/dimensions" as dim;
+
+//GLOBAL
+@import "../global/normalize";
+
+
+//CONTENT  
+
+.esports--title{
+    font-size: var.$font-title;
+    font-family: var.$titles;
+    color: map-get($map: var.$colors, $key:dark );
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.esports{
+    width: 100%;
+    max-width: 1200px;
+    padding: 3.5rem 1rem;
+    margin: 0 auto 7rem;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 1rem;
+    gap: 2rem;
+    background-color: fade-out($color: map-get($map: var.$colors, $key: primary), $amount: 0.8) ;
+    &__text{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem;
+        text-align: center;
+        &__title{
+            font-size: var.$font-title;
+            font-family: var.$titles;
+            color: map-get($map: var.$colors, $key:darker );
+            line-height: 3rem;
+        }
+        &__des{
+            line-height: 2.5rem;
+        }
+    }
+}

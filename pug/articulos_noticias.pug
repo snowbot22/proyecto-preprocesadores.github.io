@@ -1,0 +1,36 @@
+mixin art( title,img )
+    h3(class="art__title") #{title}
+    figure(class="art__img")
+        img(class="img--large" src=img  alt=image)
+    
+
+
+block article1
+    article(class="art")
+        +art("Europa desmiente a la FTC: Xbox no prometió que Starfield sería multiplataforma",
+        "https://media.vandal.net/i/1280x720/12-2022/2022121212315977_1.jpg.webp")
+        p(class="art__text") 
+            |La Comisión Europea ha desmentido en declaraciones al medio Seeking Alpha la afirmación de la Comisión Federal de Comercio de Estados Unidos del pasado jueves, donde el órgano antimonopolio americano aseguró que Microsoft prometió al ente gubernamental europeo que la adquisición de Zenimax no supondría que los juegos de Bethesda y otras de sus compañías serían exclusivos del ecosistema Xbox (y Steam), como será el caso de Starfield y Redfall.
+            |"La Comisión aclaró la transacción de Microsoft/Zenimax sin condicionantes, ya que concluyó que la transacción no tendría consecuencias para la competitividad. Microsoft no ofreció ningún compromiso a la Comisión", dice el comunicado de la Comisión Europea.
+
+block article2
+    article(class="art")
+        +art("Este juego de mirar patos de goma se ha convertido en uno de los mejor valorados en Steam",
+            "https://media.vandal.net/i/1280x720/12-2022/202212121832752_1.jpg.webp")
+        p(class="art__text")
+            |Placid Plastic Duck Simulator es un juego de mirar patos de goma flotando en una piscina. Y ya está. No tiene más que eso, no hay un giro de guion ni una mecánica secreta: los patitos flotan en una piscina mientras nuestras únicas interacciones se basan en mirar cómo se mueven y hacer clic en ellos para que reproduzcan un sonido gracioso. Con eso, el proyecto del estudio italiano Turbolento Games se ha convertido en uno de los mejor valorados de Steam.
+            |A día de hoy, este videojuego contemplativo ha conseguido entrar en el top 20 de los juegos de 2022 mejor valorados por los jugadores de Steam, según el portal Steam250, gracias a más de 4000 valoraciones de usuarios que le dan un 99% de votos positivos al juego. En el mismo portal podemos comprobar que Placid Plastic Duck Simulator también va ganando puestos en los juegos más valorados de la historia en Steam, donde ya ostenta el puesto 211, nada fácil de conseguir quedando por encima de Borderlands 2, Outer Wilds o Yakuza: Like a Dragon.
+
+block article3(class="art")
+    article(class="art")
+        +art("Reserva la exclusiva Deluxe Edition de Final Fantasy 16 en GAME y consigue un DLC",
+        "https://media.vandal.net/i/1280x720/12-2022/2022121216595910_1.jpg.webp")
+        p(class="art__text") 
+            |Ofrecido por GAME.
+            |Square Enix anunció la fecha de lanzamiento de Final Fantasy XVI en The Game Awards 2022 con el espectacular tráiler insertado más abajo. El JRPG exclusivo para PlayStation 5 se estrenará el 22 de junio de 2023. La cadena española de tiendas especializadas en videojuegos ha anunciado que la Deluxe Edition de uno de los juegos más esperados del año que viene es exclusiva de GAME, e incluye lo siguiente:
+            |Juego Final Fantasy XVI para PS5 en formato físico.
+            |Caja metálica exclusiva.
+            |Mapa de tela exclusivo.
+            |Blood Sword (Arma DLC).
+            |Juke Box (Main Theme DLC).
+

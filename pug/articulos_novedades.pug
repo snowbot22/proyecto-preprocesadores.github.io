@@ -1,0 +1,28 @@
+mixin card(title,genre,image)
+    article(class="nov")
+        figure(class="nov__img") 
+            img(src=image alt=main-image class="img--large")
+        div(class="nov__text") 
+            h3(class="nov__text__title") #{title}
+            p(class="nov__text__genre") Géneros: #{genre}
+
+block novedad1
+        +card(
+            "One Piece Odyssey",
+            "JRPG/Mundo abierto",
+            "https://static.bandainamcoent.eu/high/one-piece/one-piece-odyssey/00-page-setup/OPOD_header_mobile_new.jpg"
+    )
+
+block novedad2 
+        +card(
+            "Hogwarts Legacy",
+            "Aventura de acción",
+            "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2022/4/21/oc0uccjgcs8efnu5idsl/hogwarts-legacy-informacion-detalles"
+    )
+
+block  novedad3 
+        +card(
+            "Gotham Knights",
+            "Aventura de acción",
+            "https://estaticos-cdn.elperiodico.com/clip/d398221c-54af-4b62-a570-0710605376fd_alta-libre-aspect-ratio_default_0.jpg"
+    )

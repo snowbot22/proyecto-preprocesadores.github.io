@@ -1,0 +1,60 @@
+mixin card-res(title,note,img)
+    div(class="reseña__card")
+        figure(class="reseña__card__img") 
+            img(src=img  alt="imagen" class="img--large") 
+        div(class="reseña__card__text") 
+            h3(class="reseña__card__text__title") #{title}
+            div(class="reseña__card__text__block") 
+                h4(class="reseña__card__text__block__title") NOTA 
+                p(class="reseña__card__text__block__note") #{note}
+
+
+block reseña1 
+    article(class="reseña")
+      +card-res("Persona 5 Royal", 10, "https://as01.epimg.net/meristation/imagenes/2019/12/03/header_image/828925281575398571.jpg")
+      div(class="reseña__lists")
+        div(class="reseña__lists__block") 
+            h3(class="reseña__lists__title--pos") Puntos positivos 
+            ul(class="reseña__lists__ul")
+                li Uno de los mejores JRPG en su versión definitiva.
+                li Las novedades de Royal mejoran la base y amplían el contenido.
+                li La traducción al español.
+        div(class="reseña__lists__block") 
+            h3(class="reseña__lists__title--neg") Puntos negativos 
+            ul(class="reseña__lists__ul")
+                li Altibajos en la dificultad en momentos puntuales.
+                
+block reseña2
+    article(class="reseña")
+      +card-res("The Legend of Zelda: The Wind Waker", 9, "https://assets.reedpopcdn.com/Untitled-1_ZGfeuqv.jpg/BROK/resize/1200x1200>/format/jpg/quality/70/Untitled-1_ZGfeuqv.jpg")
+      div(class="reseña__lists")
+        div(class="reseña__lists__block") 
+            h3(class="reseña__lists__title--pos") Puntos positivos 
+            ul(class="reseña__lists__ul")
+                li Uno de los mejores JRPG en su versión definitiva.
+                li La traducción al español.
+        div(class="reseña__lists__block") 
+            h3(class="reseña__lists__title--neg") Puntos negativos 
+            ul(class="reseña__lists__ul")
+                li Altibajos en la dificultad en momentos puntuales.
+
+block reseña2
+    article(class="reseña")
+      +card-res("Stray", 8, "https://i.blogs.es/102591/stray-el-juego-del-gatito-es-tan-corto-que-ha-provocado-que-muchos-de-sus-jugadores-en-steam-pidan-un-reembolso-en-la-plataforma/1366_2000.jpeg")
+      div(class="reseña__lists")
+        div(class="reseña__lists__block") 
+            h3(class="reseña__lists__title--pos") Puntos positivos 
+            ul(class="reseña__lists__ul")
+                li El ritmo de la aventura en trama, jugabilidad y exploración
+                li El apartado artístico y técnico.
+                li Lo suficientemente sencillo y bien diseñado para que sea muy difícil atascarse.
+        div(class="reseña__lists__block") 
+            h3(class="reseña__lists__title--neg") Puntos negativos 
+            ul(class="reseña__lists__ul")
+                li Que en un juego protagonizado por un gato el salto sea contextual.
+                li Las habilidades gatunas están desaprovechadas.
+                li La trama no sorprende ni emociona.
+
+
+                
+        

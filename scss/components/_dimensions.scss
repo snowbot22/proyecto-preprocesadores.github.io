@@ -1,0 +1,9 @@
+//MIXIN DIMENSIONS
+@mixin dimensions($width, $maxWidth:auto, $minWidth:auto, $height, $maxHeight:auto, $minHeight:auto){
+    width: $width;
+    max-width: $maxWidth;
+    min-width: $minWidth;
+    height: $height;
+    max-height: $maxHeight;
+    min-height: $minHeight;
+}

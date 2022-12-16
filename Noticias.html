@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS VideoGames</title>
+    <!-- LINK CSS-->
+    <link rel="stylesheet" href="css/mobile/index.css" media="screen and (max-width: 425px)">
+    <link rel="stylesheet" href="css/tablet/index.css" media="screen and (min-width: 426px) and (max-width: 768px)">
+    <link rel="stylesheet" href="css/desktop/index.css" media="screen and (min-width: 769px)">
+    <!-- LINK FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&amp;family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+  </head>
+  <body> 
+    <main>
+      <header>
+        <nav> <a class="nav__logo" href="Noticias.html">
+            <figure class="nav__logo__figure"> <img class="img--large" src="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 6000 965.1' style='enable-background:new 0 0 6000 965.1;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23292627;%7D .st1%7Bfill:%2334B0E5;%7D .st2%7Bopacity:0.9;fill:%23231F20;%7D .st3%7Bopacity:0.7;fill:%23231F20;%7D%0A%3C/style%3E%3Cg id='Layer_1'%3E%3C/g%3E%3Cg id='guides'%3E%3C/g%3E%3Cg id='Layer_7'%3E%3Cg%3E%3Cpath class='st0' d='M5695.8,0v773H6000v192h-495.8V0H5695.8z'/%3E%3Cpath class='st0' d='M1524.7,965.1L1135.5,0h221.1l127.3,319.6l69.7,198.8l68.3-192.1L1750.5,0h221.1L1580,965.1H1524.7z'/%3E%3Cpath class='st0' d='M2297.2,0h44.6L2734,965.1h-215.7l-38.9-103.4h-317.6l-37.5,103.4h-217.1L2297.2,0z M2408.4,681.7 l-87.1-249.8l-89.8,249.8H2408.4z'/%3E%3Cpath class='st0' d='M4933.3,0h44.6l392.3,965.1h-215.7l-38.9-103.4H4798l-37.5,103.4h-217.1L4933.3,0z M5044.6,681.7l-87.1-249.8 l-89.8,249.8H5044.6z'/%3E%3Cpath class='st0' d='M3059.7,965.1h-191.6V0h67l467.6,544V0h192.9v965.1h-65.9l-470.1-527.2V965.1z'/%3E%3Cpath class='st0' d='M4004,965.1h-192.6V0H4004C4644.9,0,4644.9,965.1,4004,965.1z M4004,193v579.1l0,0 C4378.3,772.1,4378.3,193,4004,193L4004,193z'/%3E%3Cg%3E%3Cpath class='st1' d='M688.6,0c183.4,74.3,312.9,254.1,312.9,464.3c0,213-133.1,394.9-320.6,467.3 c-55.9,21.5-116.6,33.4-180.1,33.4c-63.5,0-124.4-11.9-180.2-33.4C133,859.2,0,677.3,0,464.3C0,254.1,129.4,74.3,313,0 l187.8,464.2L688.6,0z'/%3E%3C/g%3E%3Cpath class='st2' d='M313,0l187.8,464.2L313,928.4C129.5,854.2,0,674.4,0,464.3C0,254.1,129.5,74.3,313,0z'/%3E%3Cpath class='st3' d='M500.8,464.2l187.8,464.3c-2.5,1.1-5.1,2.1-7.7,3.1c-55.9,21.5-116.6,33.4-180.1,33.4 c-63.5,0-124.4-11.9-180.2-33.4c-2.6-1-5.1-2-7.6-3.1L500.8,464.2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A" alt="logo"></figure></a>
+          <ul class="nav__ul">
+            <li class="nav__ul__li"><a class="link--normal" id="Noticias">Noticias</a></li>
+            <li class="nav__ul__li"><a class="link--normal" id="Novedades">Novedades</a></li>
+            <li class="nav__ul__li"><a class="link--normal" id="Reseñas">Reseñas</a></li>
+            <li class="nav__ul__li"><a class="link--normal" id="eSports">eSports</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main> 
+        <section id="noticiasContent"> 
+          <h2 class="noticias--title">Noticias  </h2>
+          <article class="art">
+                      <h3 class="art__title">Europa desmiente a la FTC: Xbox no prometió que Starfield sería multiplataforma</h3>
+                      <figure class="art__img"><img class="img--large" src="https://media.vandal.net/i/1280x720/12-2022/2022121212315977_1.jpg.webp"></figure>
+            <p class="art__text">
+               La Comisión Europea ha desmentido en declaraciones al medio Seeking Alpha la afirmación de la Comisión Federal de Comercio de Estados Unidos del pasado jueves, donde el órgano antimonopolio americano aseguró que Microsoft prometió al ente gubernamental europeo que la adquisición de Zenimax no supondría que los juegos de Bethesda y otras de sus compañías serían exclusivos del ecosistema Xbox (y Steam), como será el caso de Starfield y Redfall.
+              "La Comisión aclaró la transacción de Microsoft/Zenimax sin condicionantes, ya que concluyó que la transacción no tendría consecuencias para la competitividad. Microsoft no ofreció ningún compromiso a la Comisión", dice el comunicado de la Comisión Europea.
+            </p>
+          </article>
+          <article class="art">
+                      <h3 class="art__title">Este juego de mirar patos de goma se ha convertido en uno de los mejor valorados en Steam</h3>
+                      <figure class="art__img"><img class="img--large" src="https://media.vandal.net/i/1280x720/12-2022/202212121832752_1.jpg.webp"></figure>
+            <p class="art__text">
+              Placid Plastic Duck Simulator es un juego de mirar patos de goma flotando en una piscina. Y ya está. No tiene más que eso, no hay un giro de guion ni una mecánica secreta: los patitos flotan en una piscina mientras nuestras únicas interacciones se basan en mirar cómo se mueven y hacer clic en ellos para que reproduzcan un sonido gracioso. Con eso, el proyecto del estudio italiano Turbolento Games se ha convertido en uno de los mejor valorados de Steam.
+              A día de hoy, este videojuego contemplativo ha conseguido entrar en el top 20 de los juegos de 2022 mejor valorados por los jugadores de Steam, según el portal Steam250, gracias a más de 4000 valoraciones de usuarios que le dan un 99% de votos positivos al juego. En el mismo portal podemos comprobar que Placid Plastic Duck Simulator también va ganando puestos en los juegos más valorados de la historia en Steam, donde ya ostenta el puesto 211, nada fácil de conseguir quedando por encima de Borderlands 2, Outer Wilds o Yakuza: Like a Dragon.
+            </p>
+          </article>
+          <article class="art">
+                      <h3 class="art__title">Reserva la exclusiva Deluxe Edition de Final Fantasy 16 en GAME y consigue un DLC</h3>
+                      <figure class="art__img"><img class="img--large" src="https://media.vandal.net/i/1280x720/12-2022/2022121216595910_1.jpg.webp"></figure>
+            <p class="art__text">
+               Ofrecido por GAME.
+              Square Enix anunció la fecha de lanzamiento de Final Fantasy XVI en The Game Awards 2022 con el espectacular tráiler insertado más abajo. El JRPG exclusivo para PlayStation 5 se estrenará el 22 de junio de 2023. La cadena española de tiendas especializadas en videojuegos ha anunciado que la Deluxe Edition de uno de los juegos más esperados del año que viene es exclusiva de GAME, e incluye lo siguiente:
+              Juego Final Fantasy XVI para PS5 en formato físico.
+              Caja metálica exclusiva.
+              Mapa de tela exclusivo.
+              Blood Sword (Arma DLC).
+              Juke Box (Main Theme DLC).
+            </p>
+          </article>
+        </section>
+        <section class="hidden" id="novedadesContent">
+          <h2 class="novedades--title">Novedades</h2>
+                    <article class="nov">
+                      <figure class="nov__img"> <img class="img--large" src="https://static.bandainamcoent.eu/high/one-piece/one-piece-odyssey/00-page-setup/OPOD_header_mobile_new.jpg" alt="null"></figure>
+                      <div class="nov__text"> 
+                        <h3 class="nov__text__title">One Piece Odyssey</h3>
+                        <p class="nov__text__genre">Géneros: JRPG/Mundo abierto</p>
+                      </div>
+                    </article>
+                    <article class="nov">
+                      <figure class="nov__img"> <img class="img--large" src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2022/4/21/oc0uccjgcs8efnu5idsl/hogwarts-legacy-informacion-detalles" alt="null"></figure>
+                      <div class="nov__text"> 
+                        <h3 class="nov__text__title">Hogwarts Legacy</h3>
+                        <p class="nov__text__genre">Géneros: Aventura de acción</p>
+                      </div>
+                    </article>
+                    <article class="nov">
+                      <figure class="nov__img"> <img class="img--large" src="https://estaticos-cdn.elperiodico.com/clip/d398221c-54af-4b62-a570-0710605376fd_alta-libre-aspect-ratio_default_0.jpg" alt="null"></figure>
+                      <div class="nov__text"> 
+                        <h3 class="nov__text__title">Gotham Knights</h3>
+                        <p class="nov__text__genre">Géneros: Aventura de acción</p>
+                      </div>
+                    </article>
+        </section>
+        <section class="hidden" id="reseñasContent">
+          <h2 class="reseñas--title">Reseñas</h2>
+          <article class="reseña">
+                      <div class="reseña__card">
+                        <figure class="reseña__card__img"> <img class="img--large" src="https://as01.epimg.net/meristation/imagenes/2019/12/03/header_image/828925281575398571.jpg" alt="imagen"></figure>
+                        <div class="reseña__card__text"> 
+                          <h3 class="reseña__card__text__title">Persona 5 Royal</h3>
+                          <div class="reseña__card__text__block"> 
+                            <h4 class="reseña__card__text__block__title">NOTA </h4>
+                            <p class="reseña__card__text__block__note">10</p>
+                          </div>
+                        </div>
+                      </div>
+            <div class="reseña__lists">
+              <div class="reseña__lists__block"> 
+                <h3 class="reseña__lists__title--pos">Puntos positivos </h3>
+                <ul class="reseña__lists__ul">
+                  <li>Uno de los mejores JRPG en su versión definitiva.</li>
+                  <li>Las novedades de Royal mejoran la base y amplían el contenido.</li>
+                  <li>La traducción al español.</li>
+                </ul>
+              </div>
+              <div class="reseña__lists__block"> 
+                <h3 class="reseña__lists__title--neg">Puntos negativos </h3>
+                <ul class="reseña__lists__ul">
+                  <li>Altibajos en la dificultad en momentos puntuales.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="reseña">
+                      <div class="reseña__card">
+                        <figure class="reseña__card__img"> <img class="img--large" src="https://assets.reedpopcdn.com/Untitled-1_ZGfeuqv.jpg/BROK/resize/1200x1200&gt;/format/jpg/quality/70/Untitled-1_ZGfeuqv.jpg" alt="imagen"></figure>
+                        <div class="reseña__card__text"> 
+                          <h3 class="reseña__card__text__title">The Legend of Zelda: The Wind Waker</h3>
+                          <div class="reseña__card__text__block"> 
+                            <h4 class="reseña__card__text__block__title">NOTA </h4>
+                            <p class="reseña__card__text__block__note">9</p>
+                          </div>
+                        </div>
+                      </div>
+            <div class="reseña__lists">
+              <div class="reseña__lists__block"> 
+                <h3 class="reseña__lists__title--pos">Puntos positivos </h3>
+                <ul class="reseña__lists__ul">
+                  <li>Uno de los mejores JRPG en su versión definitiva.</li>
+                  <li>La traducción al español.</li>
+                </ul>
+              </div>
+              <div class="reseña__lists__block"> 
+                <h3 class="reseña__lists__title--neg">Puntos negativos </h3>
+                <ul class="reseña__lists__ul">
+                  <li>Altibajos en la dificultad en momentos puntuales.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="reseña">
+                      <div class="reseña__card">
+                        <figure class="reseña__card__img"> <img class="img--large" src="https://i.blogs.es/102591/stray-el-juego-del-gatito-es-tan-corto-que-ha-provocado-que-muchos-de-sus-jugadores-en-steam-pidan-un-reembolso-en-la-plataforma/1366_2000.jpeg" alt="imagen"></figure>
+                        <div class="reseña__card__text"> 
+                          <h3 class="reseña__card__text__title">Stray</h3>
+                          <div class="reseña__card__text__block"> 
+                            <h4 class="reseña__card__text__block__title">NOTA </h4>
+                            <p class="reseña__card__text__block__note">8</p>
+                          </div>
+                        </div>
+                      </div>
+            <div class="reseña__lists">
+              <div class="reseña__lists__block"> 
+                <h3 class="reseña__lists__title--pos">Puntos positivos </h3>
+                <ul class="reseña__lists__ul">
+                  <li>El ritmo de la aventura en trama, jugabilidad y exploración</li>
+                  <li>El apartado artístico y técnico.</li>
+                  <li>Lo suficientemente sencillo y bien diseñado para que sea muy difícil atascarse.</li>
+                </ul>
+              </div>
+              <div class="reseña__lists__block"> 
+                <h3 class="reseña__lists__title--neg">Puntos negativos </h3>
+                <ul class="reseña__lists__ul">
+                  <li>Que en un juego protagonizado por un gato el salto sea contextual.</li>
+                  <li>Las habilidades gatunas están desaprovechadas.</li>
+                  <li>La trama no sorprende ni emociona.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </section>
+        <secttion class="hidden" id="esportsContent">
+          <h2 class="esports--title">Esports</h2>
+                    <article class="esports">
+                      <div class="esports__text">
+                        <h3 class="esports__text__title">Riot Games abre un local para jugar gratis a Valorant en un aeropuerto de Corea del Sur </h3>
+                        <p class="esports__text__des"> Se trata del mayor aeropuerto del país asiático y ahora cuenta con un lugar en el que amenizar la espera de nuestros vuelos.</p>
+                        <p class="esports__text__date"> 11:00 5/12/2022</p>
+                      </div>
+                      <figure class="esports__img"> <img class="img--large" src="https://media.vandalsports.com/i/1706x960/12-2022/202212517034_1.jpg.webp" alt="image"></figure>
+                    </article>
+        </secttion>
+      </main>
+    </main>
+  </body>
+  <!--JAVA SCRIPT-->
+  <script src="js/main.js"> </script>
+</html>

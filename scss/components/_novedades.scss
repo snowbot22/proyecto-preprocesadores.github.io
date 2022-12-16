@@ -1,0 +1,62 @@
+//ABSTRACTS
+@use "../abstract/variables" as var;
+
+//COMPONENTS
+@use "../components/flex" as flex;
+@use "../components/grid" as grid;
+@use "../components/dimensions" as dim;
+
+//GLOBAL
+@import "../global/normalize";
+
+
+//NOVEDADES 
+
+.novedades--title{
+    font-size: var.$font-title;
+    font-family: var.$titles;
+    color: map-get($map: var.$colors, $key:dark );
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.nov{
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    height: 300px;
+    margin: 0 auto 7rem;
+    &__img{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    &__text{
+        grid-row: 1;
+        grid-column: 1;
+        background-color: fade-out($color: map-get($map: var.$colors, $key: dark), $amount: 0.4);
+        width: 100%;
+        max-width: 800px;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        gap: 3rem;
+        margin: auto;
+        height: 100%;
+        &__title{
+            color: white;
+            font-size: var.$font-title;
+        }
+        &__genre{
+            color: white;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .nov{
+        height: 550px;
+    }
+}
+    

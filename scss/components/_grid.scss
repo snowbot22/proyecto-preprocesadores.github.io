@@ -1,0 +1,21 @@
+//MIXIN GRID
+@mixin grid($col, $rows, $gap:0, $place: center, $content: center){
+    display: grid;
+    grid-template-columns: repeat($col,1fr);
+    grid-template-rows: repeat($rows,1fr);
+    gap: $gap;
+    place-items: $place;
+    place-content: $content;
+}
+
+//CENTER CONTENT
+@mixin center-cont(){
+    display: grid;
+    place-content: center;
+}
+
+//CENTER ITEMS
+@mixin center-itms(){
+    display: grid;
+    place-items: center;
+}

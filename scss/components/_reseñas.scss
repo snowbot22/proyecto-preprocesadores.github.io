@@ -1,0 +1,123 @@
+//ABSTRACTS
+@use "../abstract/variables" as var;
+
+//COMPONENTS
+@use "../components/flex" as flex;
+@use "../components/grid" as grid;
+@use "../components/dimensions" as dim;
+
+//GLOBAL
+@import "../global/normalize";
+
+
+//CONTENT
+
+.reseñas--title{
+    font-size: var.$font-title;
+    font-family: var.$titles;
+    color: map-get($map: var.$colors, $key:dark );
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.reseña{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    margin: 0 auto 7rem;
+    width: 100%;
+    max-width: 1200px;
+}
+.reseña__card{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    height: 300px;
+    position: relative;
+    &__img{
+        grid-row: 1;
+        grid-column: 1;
+        width: 100%;
+    }
+    &__text{
+        grid-row:1;
+        grid-column: 1;
+        background-color: fade-out($color: map-get($map: var.$colors, $key: dark), $amount: 0.4);
+        width: 100%;
+        max-width: 800px;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        color: white;
+        margin: auto;
+        height: 100%;
+        &__title{
+            font-size: 4rem;
+            font-family: var.$titles;
+        }
+    }
+}
+
+.reseña__card__text__block{
+    position: absolute;
+    left: 50%;
+    bottom: -7rem;
+    margin-left: -60px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    &__title{
+        font-size: var.$font-subtitle;
+    }
+    &__note{
+        background-color: map-get($map: var.$colors, $key:darker );
+        border-radius: 100%;
+        width: 120px;
+        height: 120px;
+        display: grid;
+        place-content: center;
+        font-size: 3.5rem;
+        font-weight: bolder;
+        box-shadow: 0px 0px 10px 0.3px rgb(0 0 0 )
+    }
+}
+
+.reseña__lists{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem;
+    gap: 2.5rem;
+    &__block{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem;
+    }
+    &__title{
+        font-size: var.$font-subtitle;
+        font-family: var.$titles;
+        &--pos{
+            color: rgb(98, 202, 138);
+        }
+        &--neg{
+            color: rgb(223, 100, 69);
+        }
+    }
+    &__ul{
+        padding: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem;
+        line-height: 2.5rem;
+        margin: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .reseña__card{
+        height: 550px;
+    }
+}
+    

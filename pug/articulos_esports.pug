@@ -1,0 +1,17 @@
+mixin esports(title,des,date,image)
+    article(class="esports")
+        div(class="esports__text")
+            h3(class="esports__text__title") #{title} 
+            p(class="esports__text__des")  #{des}
+            p(class="esports__text__date")  #{date}
+        figure(class="esports__img") 
+            img(src=image, alt="image" class="img--large")
+
+
+block esports1
+    +esports(
+        "Riot Games abre un local para jugar gratis a Valorant en un aeropuerto de Corea del Sur",
+        "Se trata del mayor aeropuerto del país asiático y ahora cuenta con un lugar en el que amenizar la espera de nuestros vuelos.",
+        "11:00 5/12/2022",
+        "https://media.vandalsports.com/i/1706x960/12-2022/202212517034_1.jpg.webp"
+    )

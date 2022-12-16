@@ -1,0 +1,67 @@
+//ABSTRACTS
+@use "../abstract/variables" as var;
+
+
+
+//COMPONENTS
+@use "../components/flex" as flex;
+@use "../components/grid" as grid;
+@use "../components/dimensions" as dim;
+@import "../components/articles";
+@import "../components/novedades";
+@import "../components/reseñas";
+@import "../components/esports";
+
+
+
+//GLOBAL
+@import "../global/normalize";
+
+
+
+//LINKS
+.link--normal{
+    text-decoration: none;
+    color: black;
+}
+
+//IMAGES
+.img--large{
+    @include dim.dimensions($width: 100%, $height: 100%);
+}
+
+//HEADER 
+nav{
+    @include flex.flex($flow: column nowrap, $justify: center, $align: center, $gap: 2rem);
+    padding: 1.5rem 0;
+}
+.nav__logo{
+    &__figure{
+        @include dim.dimensions($width: 50%, $height: 80px);
+        margin: auto;
+    }
+}
+.nav__ul{
+    @include flex.flex($flow: row nowrap, $justify: space-around, $align: center);
+    @include dim.dimensions($width: 100%, $height: 75px);
+    padding: 0 1rem;
+    background-color: map-get($map: var.$colors, $key:primary );
+    font-family: var.$titles;
+    font-size: var.$font-subtitle;
+    letter-spacing: .1rem;
+    list-style: none;
+    &__li{
+        @include dim.dimensions($width: 100%, $height: 100%);
+        @include grid.center-cont();
+        cursor: pointer;
+        &:hover{
+            background-color: map-get($map: var.$colors, $key:secondary );
+        }
+    }
+}
+
+
+//STATES
+.hidden{
+    display: none;
+}

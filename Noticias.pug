@@ -1,0 +1,49 @@
+-let listaHeader=["Noticias","Novedades","Reseñas","eSports"]
+
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title SASS VideoGames
+        // LINK CSS
+        link(rel="stylesheet" href="css/mobile/index.css" media="screen and (max-width: 425px)")
+        link(rel="stylesheet" href="css/tablet/index.css" media="screen and (min-width: 426px) and (max-width: 768px)")
+        link(rel="stylesheet" href="css/desktop/index.css" media="screen and (min-width: 769px)")
+        // LINK FONTS
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet")
+    body 
+        main
+            header
+                nav  
+                    a(href="Noticias.html" class="nav__logo")
+                        figure(class="nav__logo__figure") 
+                            img(src="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 6000 965.1' style='enable-background:new 0 0 6000 965.1;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23292627;%7D .st1%7Bfill:%2334B0E5;%7D .st2%7Bopacity:0.9;fill:%23231F20;%7D .st3%7Bopacity:0.7;fill:%23231F20;%7D%0A%3C/style%3E%3Cg id='Layer_1'%3E%3C/g%3E%3Cg id='guides'%3E%3C/g%3E%3Cg id='Layer_7'%3E%3Cg%3E%3Cpath class='st0' d='M5695.8,0v773H6000v192h-495.8V0H5695.8z'/%3E%3Cpath class='st0' d='M1524.7,965.1L1135.5,0h221.1l127.3,319.6l69.7,198.8l68.3-192.1L1750.5,0h221.1L1580,965.1H1524.7z'/%3E%3Cpath class='st0' d='M2297.2,0h44.6L2734,965.1h-215.7l-38.9-103.4h-317.6l-37.5,103.4h-217.1L2297.2,0z M2408.4,681.7 l-87.1-249.8l-89.8,249.8H2408.4z'/%3E%3Cpath class='st0' d='M4933.3,0h44.6l392.3,965.1h-215.7l-38.9-103.4H4798l-37.5,103.4h-217.1L4933.3,0z M5044.6,681.7l-87.1-249.8 l-89.8,249.8H5044.6z'/%3E%3Cpath class='st0' d='M3059.7,965.1h-191.6V0h67l467.6,544V0h192.9v965.1h-65.9l-470.1-527.2V965.1z'/%3E%3Cpath class='st0' d='M4004,965.1h-192.6V0H4004C4644.9,0,4644.9,965.1,4004,965.1z M4004,193v579.1l0,0 C4378.3,772.1,4378.3,193,4004,193L4004,193z'/%3E%3Cg%3E%3Cpath class='st1' d='M688.6,0c183.4,74.3,312.9,254.1,312.9,464.3c0,213-133.1,394.9-320.6,467.3 c-55.9,21.5-116.6,33.4-180.1,33.4c-63.5,0-124.4-11.9-180.2-33.4C133,859.2,0,677.3,0,464.3C0,254.1,129.4,74.3,313,0 l187.8,464.2L688.6,0z'/%3E%3C/g%3E%3Cpath class='st2' d='M313,0l187.8,464.2L313,928.4C129.5,854.2,0,674.4,0,464.3C0,254.1,129.5,74.3,313,0z'/%3E%3Cpath class='st3' d='M500.8,464.2l187.8,464.3c-2.5,1.1-5.1,2.1-7.7,3.1c-55.9,21.5-116.6,33.4-180.1,33.4 c-63.5,0-124.4-11.9-180.2-33.4c-2.6-1-5.1-2-7.6-3.1L500.8,464.2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A", alt="logo" class="img--large") 
+                    ul(class="nav__ul")
+                        each item in listaHeader
+                            li(class="nav__ul__li")
+                                a(id= item  class="link--normal") #{item}
+            main 
+                section(class="" id="noticiasContent") 
+                    h2(class="noticias--title") Noticias  
+                    include pug/articulos_noticias.pug
+                
+                section(class="hidden" id="novedadesContent")
+                    h2(class="novedades--title") Novedades
+                    include pug/articulos_novedades.pug
+
+                section(class="hidden" id="reseñasContent")
+                    h2(class="reseñas--title") Reseñas
+                    include pug/articulos_reseñas.pug
+
+                secttion(class="hidden" id="esportsContent")
+                    h2(class="esports--title") Esports
+                    include pug/articulos_esports.pug
+
+
+    //JAVA SCRIPT
+    script(src="js/main.js") 
