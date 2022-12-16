@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pug": "pug -w --pretty Noticias.pug",
+    "pug": "pug -w --pretty index.pug",
     "sass-mobile": "sass --watch scss/mobile/index.scss css/mobile/index.css",
     "sass-tablet": "sass --watch scss/tablet/index.scss css/tablet/index.css",
     "sass-desktop": "sass --watch scss/desktop/index.scss css/desktop/index.css"
